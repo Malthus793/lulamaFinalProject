@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Clinic Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Public Clinic Appointment Booking</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57658.33152222416!2d27.9612352!3d-25.416667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfb61c56360c69%3A0x3ffe9cc117dd006c!2sMercy%20Primary%20Healthcare%20Clinic!5e0!3m2!1sen!2sza!4v1693708324581!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form id="booking-form">
+            <label for="reason">Reason for Appointment:</label>
+            <input type="text" id="reason" name="reason" required>
+            <br>
+
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" cols="50" required></textarea>
+            <br>
+
+            <!-- Time slot selection can be added here using JavaScript -->
+            <!-- Location selection can also be added here -->
+
+            <button type="button" id="show-slots">Show Available Slots</button>
+
+            <!-- Container to display available slots -->
+            <div id="available-slots"></div>
+            <br>
+
+            <!-- Container to display nearest clinics (if clinic is full) -->
+            <div id="nearest-clinics"></div>
+            <br>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+    <!-- JavaScript code to handle dynamic functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+

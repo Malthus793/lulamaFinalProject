@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor's Page</title>
+    <link rel="stylesheet" type="text/css" href="doc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor's Prescription</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prescription">Prescription:</label>
+                <textarea id="prescription" name="prescription" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" style="border-radius: 5px; padding: 5px 15px; margin-right: 10px;">Send Prescription</button>
+        </form>
+		
+        <button id="send-back" onclick ="sendFileBack()" style="border-radius: 5px; padding: 5px 15px; margin-right: 10px;">Send File Back to Admin</button>
+    </div>
+
+    <script>
+        function sendFileBack() {
+            // Add JavaScript logic to send the file back to the admin.
+            // This could involve an AJAX request or server-side processing.
+            alert("File sent back to admin!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lulama Healthcare</title>
+    <link rel="stylesheet" type="text/css" href="nextpage.css">
+</head>
+<body class="img js-fullheight"  style="background-image: url(images/IMG-20230902-WA0007.jpg); background-size: cover; background-position: center;">
+    <header>
+        <h1>Welcome to Lulama Healthcare</h1>
+    </header>
+    <main>
+        <section class="patient-portal">
+            <h2>Patient Portal</h2>
+            <form id="patient-form">
+                <label for="patient-number">Patient Number:</label>
+                <input type="text" id="patient-number" name="patient-number" required>
+
+                <label for="patient-details">Patient Details:</label>
+                <textarea id="patient-details" name="patient-details" rows="4" required></textarea>
+
+                <label for="medication">Choose Medication:</label>
+                <select id="medication" name="medication">
+                    <option value="none">Select Medication</option>
+                    <option value="medication1">Medication 1</option>
+                    <option value="medication2">Medication 2</option>
+                    <option value="medication3">Medication 3</option>
+                </select>
+
+                <label for="diagnosis">Diagnosis:</label>
+                <input type="text" id="diagnosis" name="diagnosis">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Lulama Healthcare
+    </footer>
+</body>
+</html>
